@@ -1,0 +1,114 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{% static '/css/Css.css' %}">
+    <script type="text/javascript">
+
+        console.log("Oomad")
+        var threshold =
+        {{ games.maxScore }}
+        var numberOfDice =
+        {{ games.diceNumber }}
+        var holdDice =
+        {{ games.holdDices }}
+        var maxRoll =
+        {{ games.maxRoll }}
+        var game_id =
+        {{ id }}
+    </script>
+    <script type="text/javascript" src="{% static '/js/javascript.js' %}"></script>
+</head>
+
+<body id="bb" class="bodyCss">
+<div id="mainDiv" class="mainDiv">
+    <div class="newGame">
+        <img src="{% static '/pic/Plus.png' %}" class="plusImage">
+        <button id="newGame" class="newButton">
+            <p>NEW GAME</p>
+        </button>
+    </div>
+    <div class="players">
+        <table>
+            <tr>
+                <td class="player0td">
+                    <p id="pedi">PLAYER 0</p>
+                </td>
+                <td>
+                    <img id="dot11" class="dot1" src="{% static '/pic/dot.png' %}"/>
+                </td>
+                <td>
+                    <p>PLAYER 1</p>
+                </td>
+                <td>
+                    <img id="dot22" class="dot2" src="{% static '/pic/dot.png' %}"/>
+                </td>
+            </tr>
+        </table>
+        <table class="table2">
+            <tr>
+                <td class="player0totalscore">
+                    <p id="player0total">0</p>
+                </td>
+                <td class="diceImage">
+                    <img id="dice" src="{% static '/pic/dice-2.png' %}" height="70" width="72">
+                </td>
+                <td>
+                    <p id="player1total">0</p>
+                </td>
+            </tr>
+        </table>
+        <table class="table3">
+            <tr>
+                <td class="diceImage2">
+                    <img id="dice2" src="{% static '/pic/dice-2.png' %}" height="70" width="72">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <div class="current1Div">
+                        <p class="current1P">CURRENT</p>
+                        <p></p>
+                        <p id="Cur1" class="current1Value">0</p>
+                    </div>
+                </td>
+                <td>
+                    <div class="rollDiv">
+                        <img class="rollImg" src="{% static '/pic/red.png' %}" height="30px" width="40px"/>
+                        <button id="rollButton" class="rollDiceButton">
+                            <p>ROLL DICE</p>
+                        </button>
+                    </div>
+
+
+                    <div class="holdDiv">
+                        <img class="holdImg" src="{% static '/pic/hold.png' %}" height="30px" width="30px"/>
+                        <button id="holdButton" class="holdButton">
+                            <p>HOLD</p>
+                        </button>
+                    </div>
+
+                    <div class="inputDiv">
+                        <input id="threshold" type="text" name="Score" value="Score" class="scoreInput">
+                    </div>
+                </td>
+
+                <td>
+                    <div class="curren21Div">
+                        <p class="current2P">CURRENT</p>
+                        <p></p>
+                        <p id="Cur2" class="current2Value">0</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
+</body>
+

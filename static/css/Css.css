@@ -1,0 +1,210 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+.bodyCss {
+    background : url("/static/pic/back.jpg") no-repeat fixed;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    margin:0px;
+    padding: 0px;
+    font-family: "Montserrat"
+}
+
+.mainDiv {
+        background-image: linear-gradient(to right,rgb(248, 245, 245) 50%, rgb(235, 228, 228) 50% );
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        height: 500px;
+        width: 800px;
+        margin: auto;
+        margin-top: 2cm;
+}
+
+.mainDiv2 {
+    background-image: linear-gradient(to right, rgb(235, 228, 228) 50% ,rgb(248, 245, 245) 50%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 800px;
+    margin: auto;
+    margin-top: 2cm;
+}
+
+
+
+.newGame {
+    align-content: center;
+    display: flex
+}
+
+.newButton {
+    background-color: inherit;
+    display: inline-block;
+    border: none;
+    margin-top: 1.3cm;
+    color: gray;
+
+}
+
+.plusImage {
+    height: 20px;
+    width: 20px;
+    background-color: inherit;
+    margin-left: 9.1cm;
+    margin-top: 1.54cm;
+    color: tomato
+}
+
+
+.players {
+    font-size: 25px;
+    color: gray
+}
+
+.rollDiceButton {
+    background-color: inherit;
+    display: inline-block;
+    border: none;
+    font-size: 15px;
+    color: gray;
+}
+
+.holdButton {
+    background-color: inherit;
+    display: inline-block;
+    border: none;
+    font-size: 15px;
+    color: gray;
+    padding-top: 10px
+}
+
+.scoreInput {
+    background-color: rgb(247, 241, 241);;
+    border-color: rgb(179, 172, 172);
+    border-radius : 4px;
+    color: tomato;
+    text-align: center
+}
+
+.player0td {
+    padding-left:130px;
+    padding-right: 9px
+}
+
+.table2 {
+    font-size:50px;
+    margin-top: -60px;
+    color: tomato
+}
+
+.player0totalscore {
+    padding-left:180px;
+    padding-right: 147px;
+}
+
+.diceImage {
+    padding-right:150px;
+    visibility: hidden;
+
+}
+
+.diceImage2 {
+    padding-left: 363px;
+    visibility: hidden;
+
+}
+
+.dot1 {
+    padding-right: 270px;
+    height: 13px;
+    width: 13px;
+    padding-bottom: 2.5px;
+    /* visibility: visible; */
+}
+
+.dot2 {
+    height: 13px;
+    width: 13px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    /* visibility: hidden; */
+}
+
+.table3 {
+    margin-top:-50px;
+}
+
+.current1Div {
+    margin-left:150px;
+    width: 90px;
+    height: 70px;
+    background-color: tomato;
+}
+
+.current1P {
+    font-size:10px;
+    text-align:center;
+    padding-top: 5px;
+}
+
+.current1Value {
+    font-size:20px;
+    text-align:center;
+    margin-top: -5px;
+    color:white;
+}
+
+.rollDiv {
+    margin-left:83px;
+    display: flex;
+    width: 150px;
+    padding-top: 30px;
+}
+
+.rollImg {
+    padding-top:10px;
+}
+
+.holdDiv {
+    margin-left:99px;
+    display: flex;
+    width: 150px;
+}
+
+.holdImg {
+    padding-top:20px;
+}
+
+.inputDiv {
+    margin-left:90px;
+    margin-top: 0px;
+    display: flex;
+    width: 150px;
+    height: 35px;
+}
+
+.curren21Div {
+    margin-left:60px;
+    width: 90px;
+    height: 70px;
+    background-color: tomato;
+}
+
+.current2P {
+    font-size:10px;
+    text-align:center;
+    padding-top: 5px;
+}
+
+.current2Value {
+    font-size:20px;
+    text-align:center;
+    margin-top: -5px;
+    color:white;
+}
