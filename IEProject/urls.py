@@ -17,12 +17,23 @@ from django.contrib import admin
 from django.urls import path
 from django.conf import settings
 from django.conf.urls.static import static
-from UserManagment.views import Log_in
+
+from IE.views import gameDesign, GameView, newgame
+from UserManagment.views import Log_in, Test, Home, Logout
 from UserManagment.views import SignUp
 
+onlineUsers = set()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('login', Log_in.as_view()),
-    path('up', SignUp.as_view())
+    path('up', SignUp.as_view()),
+    path('test',Test.as_view()),
+    path('home',Home.as_view()),
+    path('logout',Logout.as_view(),name='logout'),
+    path('gameDesign',gameDesign.as_view(),name='gamedesign'),
+    path('gameView',GameView.as_view(),name='gameview'),
+    path('newgame',newgame.as_view(),name='newgame'),
+
+
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

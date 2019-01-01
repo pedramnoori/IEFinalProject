@@ -1,0 +1,3 @@
+{% for game in games %}
+    <a href={% url 'gameview' %}?id={{ game.id }}>{{ game.name }}</a>
+{% endfor %}

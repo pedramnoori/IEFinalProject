@@ -1,0 +1,59 @@
+{% extends 'pages/index.html' %}
+{% block wrapper %}
+    <h1>Create your own game</h1>
+
+    <br><br><br>
+
+    <form action="{% url 'gamedesign' %}" method="post">
+
+        <label>Enter game name
+            <br>
+            <input type="text" name="name"/><br>
+        </label>
+
+        <label>1.Maximum of score
+            <br>
+            <input type="text" name="maxScore"/><br>
+        </label>
+
+        <br>
+        <br><br><br>
+        <label>2.Write the current score zero when ...
+            <br>
+            <input type="text" name="holdDices"/><br>
+        </label>
+
+        <br>
+        <br><br><br>
+
+        <label>3.Write time of one user dice ...
+            <br>
+            <input type="text" name="maxRoll"/><br>
+        </label>
+
+                <br>
+        <br><br><br>
+
+        <label> 4.Number of dices ...
+            <br>
+            <br>
+            <label>
+                <input type="radio" name="diceNumber" value="1"> 1<br>
+            </label>
+            <label>
+                <input type="radio" name="diceNumber" value="2"> 2<br>
+            </label>
+            <label>
+                <input type="radio" name="diceNumber" value="3"> 3 <br>
+            </label>
+            <label>
+                <input type="radio" name="diceNumber" value="4"> 4 <br>
+            </label>
+
+        </label>
+
+    <label>
+        <input type="submit" href="#"/>
+    </label>
+    </form>
+{% endblock %}
